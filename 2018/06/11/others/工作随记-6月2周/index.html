@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>工作随记-6月2周目 | 博客君</title><link rel="stylesheet" type="text/css" href="//fonts.neworld.org/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/css/style.css?v=2.0.1"><link rel="stylesheet" type="text/css" href="/css/highlight.css?v=2.0.1"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">工作随记-6月2周目</h1><a id="logo" href="/.">博客君</a><p class="description">记录点点滴滴</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 主页</i></a><a href="/categories/Android"><i class="fa fa-archive"> 安卓</i></a><a href="/categories/PHP"><i class="fa fa-archive"> PHP</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="Arama"></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title">工作随记-6月2周目</h1><div class="post-meta"><a href="/2018/06/11/others/工作随记-6月2周/#comments" class="comment-count"></a><p><span class="date">Jun 11, 2018</span><span><a href="/categories/工作/" class="category">工作</a></span><span><i id="busuanzi_container_page_pv"><i id="busuanzi_value_page_pv"></i><i>点击</i></i></span></p></div><div class="post-content"><a id="more"></a>
+<h2 id="星期一"><a href="#星期一" class="headerlink" title="星期一"></a>星期一</h2><p>###　1.linux卸载openjdk<br>sudo apt-get purge openjdk*</p>
+<p>###　2.linux下JDK环境配置<br>tar -zxvf jdk-8u161-linux-x64.tar.gz</p>
+<ol>
+<li>编辑文件　sudo vim /etc/profile，在后面添加</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME=/home/deepin/soft/jdk/jdk1.8.0_161</span><br><span class="line">export PATH=$JAVA_HOME/bin:$PATH </span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>然后使用命令<code>source /etc/profile</code>即可</li>
+</ol>
+<h3 id="3-几条命令"><a href="#3-几条命令" class="headerlink" title="3.几条命令"></a>3.几条命令</h3><ul>
+<li>撤销配置的环境变量节点：unset 节点名</li>
+</ul>
+<hr>
+<h2 id="星期二"><a href="#星期二" class="headerlink" title="星期二"></a>星期二</h2><h3 id="1-2018年半月谈精选"><a href="#1-2018年半月谈精选" class="headerlink" title="1.2018年半月谈精选"></a>1.2018年半月谈精选</h3><p><a href="http://www.chinagwy.org/html/slzl/qt/201802/92_231501.html" target="_blank" rel="noopener">http://www.chinagwy.org/html/slzl/qt/201802/92_231501.html</a></p>
+<h3 id="2-每日新闻联播"><a href="#2-每日新闻联播" class="headerlink" title="2.每日新闻联播"></a>2.每日新闻联播</h3><p>mrxwlb.com </p>
+<h3 id="3-项目push命令"><a href="#3-项目push命令" class="headerlink" title="3.项目push命令"></a>3.项目push命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;增加....&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<h3 id="4-接手项目原型"><a href="#4-接手项目原型" class="headerlink" title="4.接手项目原型"></a>4.接手项目原型</h3><p>产品大牛：<a href="http://u.pmdaniu.com/0AXv" target="_blank" rel="noopener">http://u.pmdaniu.com/0AXv</a></p>
+<h3 id="5-两个Laravel的辅助函数"><a href="#5-两个Laravel的辅助函数" class="headerlink" title="5.两个Laravel的辅助函数"></a>5.两个Laravel的辅助函数</h3><ul>
+<li>trans()</li>
+</ul>
+<blockquote>
+<p>trans 函数使用本地文件翻译给定语言行：<br>trans(‘admin.update_success’)</p>
+</blockquote>
+<ul>
+<li>trans_choice()</li>
+</ul>
+<blockquote>
+<p>trans_choice 函数翻译带拐点的给定语言行：<br>$value = trans_choice(‘foo.bar’, $count);</p>
+</blockquote>
+<hr>
+<h2 id="星期三"><a href="#星期三" class="headerlink" title="星期三"></a>星期三</h2><h3 id="1-linux中设置tab键的宽度"><a href="#1-linux中设置tab键的宽度" class="headerlink" title="1.linux中设置tab键的宽度"></a>1.linux中设置tab键的宽度</h3><ol>
+<li><p>当前用户</p>
+<blockquote>
+<p>输入命令：vim ~/.vimrc<br>然后：set tabstop=4   //我这里将Tab键的宽度设置为4<br>保存：ctrl+z+z（或：wq！）<br>OK！</p>
+</blockquote>
+</li>
+<li><p>所有用户</p>
+<blockquote>
+<p>输入命令：vim /etc/vimrc<br>在vimrc文件的最后添加：set tabstop=4<br>保存：ctrl+z+z（或：wq！）<br>OK!</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="2-npm"><a href="#2-npm" class="headerlink" title="2.npm"></a>2.npm</h3><blockquote>
+<p>npm install<br>npm run pro<br>npm run dev</p>
+</blockquote>
+<p>项目当中缺少视图的时候，使用前面两条命令解决问题。</p>
+<hr>
+<h2 id="星期四"><a href="#星期四" class="headerlink" title="星期四"></a>星期四</h2><h3 id="1-完成上级分配的任务"><a href="#1-完成上级分配的任务" class="headerlink" title="1.完成上级分配的任务"></a>1.完成上级分配的任务</h3><p>对后台中的用户列表个人号中的内容进行获取、</p>
+<h3 id="2-废弃的安卓手机用于摄像头"><a href="#2-废弃的安卓手机用于摄像头" class="headerlink" title="2.废弃的安卓手机用于摄像头"></a>2.废弃的安卓手机用于摄像头</h3><p><a href="https://juejin.im/entry/5b20c9fef265da6e46001b23?utm_source=gold_browser_extension" target="_blank" rel="noopener">https://juejin.im/entry/5b20c9fef265da6e46001b23?utm_source=gold_browser_extension</a></p>
+<h3 id="3-python中，append和extend"><a href="#3-python中，append和extend" class="headerlink" title="3.python中，append和extend"></a>3.python中，append和extend</h3><p>append是将参数整体添加，如下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;]</span><br><span class="line">b = [&apos;d&apos;,&apos;e&apos;]</span><br><span class="line"></span><br><span class="line">a.append(b) #[&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,[&apos;d&apos;,&apos;e&apos;]]</span><br><span class="line">a.extend(b) #[&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,&apos;d&apos;,&apos;e&apos;]</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="星期五"><a href="#星期五" class="headerlink" title="星期五"></a>星期五</h2><h3 id="1-早上手机系统爆炸"><a href="#1-早上手机系统爆炸" class="headerlink" title="1.早上手机系统爆炸"></a>1.早上手机系统爆炸</h3><h3 id="2-NES论坛"><a href="#2-NES论坛" class="headerlink" title="2.NES论坛"></a>2.NES论坛</h3><p><a href="http://www.nesbbs.com/" target="_blank" rel="noopener">http://www.nesbbs.com/</a></p>
+<h3 id="3-linux新建快捷方式"><a href="#3-linux新建快捷方式" class="headerlink" title="3.linux新建快捷方式"></a>3.linux新建快捷方式</h3><ol>
+<li>进入/usr/share/applications目录</li>
+<li><p>新建xxx.desktop文件，内容如下</p>
+<pre><code>[Desktop Entry]
+Version=1.0
+Name=eclipse
+Comment=this is eclipse
+Exec=/home/XXXXXX/eclipse/eclipse
+Icon=/home/XXXXXX/eclipse/icon.jpg
+Terminal=false
+Type=Application
+Categories=Development
+</code></pre></li>
+</ol>
+<blockquote>
+<p>sudo mv PhpStorm-145.258.2/ /opt/phpstorm/<br>sudo ln -s /opt/phpstorm/bin/phpstorm.sh /usr/local/bin/phpstorm</p>
+</blockquote>
+</div><div class="tags"></div><div class="post-share"></div><div class="post-nav"><a href="/2018/05/21/php/Laravel 5.5官方推荐的Nginx配置学习教程/" class="next">Laravel 5.5官方推荐的Nginx配置学习教程</a></div><div id="comments"></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="search-pla"></div><div id="toc" class="widget"><div class="widget-title"><i class="fa fa-fei">文章目录</i></div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#星期一"><span class="toc-text">星期一</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-几条命令"><span class="toc-text">3.几条命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#星期二"><span class="toc-text">星期二</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2018年半月谈精选"><span class="toc-text">1.2018年半月谈精选</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-每日新闻联播"><span class="toc-text">2.每日新闻联播</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-项目push命令"><span class="toc-text">3.项目push命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-接手项目原型"><span class="toc-text">4.接手项目原型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-两个Laravel的辅助函数"><span class="toc-text">5.两个Laravel的辅助函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#星期三"><span class="toc-text">星期三</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-linux中设置tab键的宽度"><span class="toc-text">1.linux中设置tab键的宽度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-npm"><span class="toc-text">2.npm</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#星期四"><span class="toc-text">星期四</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-完成上级分配的任务"><span class="toc-text">1.完成上级分配的任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-废弃的安卓手机用于摄像头"><span class="toc-text">2.废弃的安卓手机用于摄像头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-python中，append和extend"><span class="toc-text">3.python中，append和extend</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#星期五"><span class="toc-text">星期五</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-早上手机系统爆炸"><span class="toc-text">1.早上手机系统爆炸</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-NES论坛"><span class="toc-text">2.NES论坛</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-linux新建快捷方式"><span class="toc-text">3.linux新建快捷方式</span></a></li></ol></li></ol></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/06/11/others/工作随记-6月2周/">工作随记-6月2周目</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/21/php/Laravel 5.5官方推荐的Nginx配置学习教程/">Laravel 5.5官方推荐的Nginx配置学习教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/21/others/工作随记-5月4周/">工作随记-5月4周目</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/27/Android/Android获取打气筒的三种方式/">Android获取打气筒的三种方式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/27/Java/Java-泛型学习笔记/">Java 泛型学习笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/27/others/工作随记-4月4周/">工作随记-4月4周目</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-gui"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/">PHP</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/安卓/">安卓</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工作/">工作</a><span class="category-list-count">3</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> 标签</i></div><div class="tagcloud"><a href="/tags/java/" style="font-size: 15px;">java</a> <a href="/tags/PHP/" style="font-size: 15px;">PHP</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> 归档</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">Baidu Site Haritası</a> |  <a href="/atom.xml">订阅</a> |  <a href="/about/">关于</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次</p><p><span> Copyright &copy;<a href="/." rel="nofollow">赤坂龙之介.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/js/search.json.js?v=2.0.1"></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.1" async></script></body></html>
